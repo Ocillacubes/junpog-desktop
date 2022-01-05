@@ -4,4 +4,4 @@ pkgver=1.0
 pkgrel=1
 pkgdesc="Collection of programs that makeup the junpog DE"
 arch=('x86_64')
-depends=('junpog-wm' 'feh' 'dmenu' 'arandr' 'lxappearance' 'dunst' 'xorg' 'lxsession' 'ttc-iosevka' 'ttf-hanazono')
+depends=('junpog-wm' 'feh' 'dmenu' 'arandr' 'lxappearance' 'dunst' 'lxsession' 'xorg-server' 'xorg-xinit' 'xterm' 'ttc-iosevka' 'ttf-hanazono')
