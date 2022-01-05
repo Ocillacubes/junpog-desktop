@@ -1,0 +1,18 @@
+# Maintainer: Ocillacubes <squirtle1607@rollingoak.com>
+pkgname='junpog-qtile'
+pkgver=1.0
+pkgrel=1
+pkgdesc="JunPog Qtile configuration"
+arch=('x86_64')
+depends=('qtile')
+makedepends=('git')
+provides=('junpog-wm')
+url="https://github.com/Ocillacubes/junpog-dots"
+source=('junpog-qtile::git+https://github.com/Ocillacubes/junpog-dots.git')
+md5sums=('SKIP')
+
+package() {
+        cd "$srcdir/${pkgname}/.config"
+        mkdir -p "$pkgdir/$HOME/.config"
+        cp -r qtile "$pkgdir/$HOME/.config/qtile"
+}
